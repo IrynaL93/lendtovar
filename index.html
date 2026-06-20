@@ -395,7 +395,17 @@ text-align:center;
 }
 
 .sticky-btn{
-display:block;
+    display:block;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(20px);
+    transition:.3s;
+}
+
+.sticky-btn.show{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
 }
 
 body{
@@ -749,6 +759,26 @@ alert(
 }
 
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
 
+    const hero = document.querySelector('.hero');
+    const stickyBtn = document.querySelector('.sticky-btn');
+
+    function toggleStickyBtn(){
+        if(window.innerWidth <= 768){
+            if(window.scrollY > hero.offsetHeight){
+                stickyBtn.classList.add('show');
+            }else{
+                stickyBtn.classList.remove('show');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', toggleStickyBtn);
+    toggleStickyBtn();
+
+});
+</script>
 </body>
 </html>    
