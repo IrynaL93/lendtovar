@@ -1,902 +1,692 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Портативний вентилятор-зволожувач | 590 грн</title>
-<meta name="description" content="Портативний вентилятор-зволожувач з USB живленням. Охолоджує та зволожує повітря. Працює від павербанка, ноутбука або мережі.">
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:Arial,sans-serif;
-line-height:1.6;
-color:#222;
-background:#f8fbff;
-}
-
-.container{
-width:min(1200px,calc(100% - 32px));
-margin:auto;
-}
-
-section{
-padding:70px 0;
-}
-
-h1,h2{
-line-height:1.2;
-margin-bottom:20px;
-}
-
-h1{
-font-size:44px;
-margin-bottom:15px;
-}
-
-h2{
-font-size:38px;
-text-align:center;
-}
-
-img{
-max-width:100%;
-display:block;
-}
-.hero{
-    min-height:100vh;
-    background:
-linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),
-url('images/hero-bg.png') center center/cover no-repeat;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    padding:60px 0;
-}
-
-.hero-image img{
-width:100%;
-max-width:650px;
-max-height:85vh;
-object-fit:contain;
-}    
-.hero-grid{
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:60px;
-    align-items:center;
-}
-
-.hero h1{
-font-size:84px;
-font-weight:800;
-line-height:.95;
-text-transform:uppercase;
-margin-bottom:25px;
-color:#fff;
-}
-.hero h1 span{
-    color:#4da3ff;
-}
-
-.hero-subtitle{
-font-size:28px;
-font-weight:400;
-margin-bottom:35px;
-}
-
-.hero-subtitle span{
-color:#4da3ff;
-font-weight:700;
-}
-
-.top-badge{
-display:inline-flex;
-align-items:center;
-gap:12px;
-padding:16px 26px;
-border-radius:20px;
-background:#fff;
-color:#2672ff;
-font-size:20px;
-font-weight:700;
-box-shadow:0 8px 25px rgba(0,0,0,.15);
-margin-bottom:30px;
-}
-
-.hero-icons{
-display:flex;
-gap:18px;
-margin-bottom:40px;
-}
-
-.hero-icon{
-width:110px;
-height:110px;
-background:#fff;
-border-radius:18px;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-
-.hero-icon span{
-font-size:34px;
-margin-bottom:8px;
-}
-
-.hero-icon strong{
-font-size:14px;
-line-height:1.3;
-color:#222;
-text-align:center;
-font-weight:600;
-}
-.offer-card{
-    background:#fff;
-    color:#222;
-    border-radius:24px;
-    padding:25px;
-    display:flex;
-    justify-content:space-between;
-    gap:30px;
-    margin-bottom:20px;
-    margin-top:20px;
-    max-width:520px;
-}
-
-.offer-label{
-    color:#ff3d00;
-    font-weight:700;
-    margin-bottom:10px;
-}
-
-.old-price{
-    text-decoration:line-through;
-    color:#888;
-    font-size:32px;
-}
-
-.new-price{
-    color:#2672ff;
-    font-size:72px;
-    font-weight:700;
-}
-
-.countdown-title{
-    color:#ff7a00;
-    font-weight:700;
-    margin-bottom:10px;
-}
-
-.countdown-timer{
-    color:#ff7a00;
-    font-size:48px;
-    font-weight:700;
-}
-  .hero-icon img{
-width:42px;
-height:42px;
-margin-bottom:10px;
-}
-    
-
-@media(max-width:768px){
-
-.offer-card{
-    flex-direction:column;
-    text-align:center;
-}
-
-.new-price{
-    font-size:52px;
-}
-
-.countdown-timer{
-    font-size:36px;
-}
-}
-
-    
-@media(max-width:768px){
-
-.hero{
-    min-height:auto;
-}
-
-.hero-grid{
-    grid-template-columns:1fr;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:42px;
-}
-
-.hero-subtitle{
-    font-size:22px;
-}
-
-.hero-icons{
-    justify-content:center;
-}
-
-.features{
-text-align:left;
-max-width:320px;
-margin:15px auto;
-}
-
-.features li{
-font-size:15px;
-}
-
-.new{
-font-size:40px;
-}
-
-.cards{
-flex-direction:column;
-align-items:center;
-}
-
-.cards .card{
-width:100%;
-max-width:400px;
-}
-
-.gallery-grid{
-grid-template-columns:1fr;
-}
-
-.benefits-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:40px;
-}
-
-.benefit-card{
-background:#fff;
-border-radius:16px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.benefit-card img{
-width:100%;
-height:250px;
-object-fit:cover;
-}
-
-.benefit-card h3{
-padding:15px 15px 5px;
-font-size:20px;
-}
-
-.benefit-card p{
-padding:0 15px 20px;
-color:#555;
-}
-
-.review-gallery{
-grid-template-columns:1fr;
-}
-
-.btn{
-width:100%;
-text-align:center;
-}
-
-.sticky-btn{
-    display:block;
-    opacity:0;
-    visibility:hidden;
-    transform:translateY(20px);
-    transition:.3s;
-}
-
-.sticky-btn.show{
-    opacity:1;
-    visibility:visible;
-    transform:translateY(0);
-}
-
-body{
-padding-bottom:90px;
-}
-.container{
-    width: calc(100% - 24px);
-    max-width: 100%;
-    padding: 0;
-}
-
-section{
-    padding: 40px 0;
-}
-
-body{
-    overflow-x: hidden;
-}
-
-h1{
-    font-size: 34px;
-}
-
-h2{
-    font-size: 28px;
-}
-
-.gallery-grid{
-    gap:10px;
-}
-
-.gallery-grid img{
-    width:140px;
-    height:140px;
-}
-.hero{
-padding:40px 0;
-}
-
-.hero-content{
-padding:25px;
-}
-
-.hero-grid{
-grid-template-columns:1fr;
-gap:20px;
-}
-
-.hero img{
-max-width:260px;
-}    
-
-}
-}
-</style>
-</head>
-<body>
-<main>
-<section class="hero">
-<div class="container">
-<div class="hero-grid">
-<div>
-<div class="top-badge">
-❄️ ОХОЛОДЖЕННЯ + ЗВОЛОЖЕННЯ + ПІДСВІТКА
-</div>
-<h1>
-ПОРТАТИВНИЙ<br>
-ВЕНТИЛЯТОР <span>3В1</span>
-</h1>
-<div class="hero-subtitle">
-Ваш особистий <span>комфорт</span> у спеку!
-</div>
-<div class="hero-icons">
-<div class="hero-icon">
-❄️
-<strong>Охолоджує повітря</strong>
-</div>
-<div class="hero-icon">
-    <img src="images/icon-cooling.svg" alt="">
-    <strong>Охолоджує<br>повітря</strong>
-</div>
-
-<div class="hero-icon">
-    <img src="images/icon-water.svg" alt="">
-    <strong>Зволожує<br>повітря</strong>
-</div>
-
-<div class="hero-icon">
-    <img src="images/icon-light.svg" alt="">
-    <strong>7 кольорів<br>підсвітки</strong>
-</div>
-
-<div class="hero-icon">
-    <img src="images/icon-silent.svg" alt="">
-    <strong>Працює<br>тихо</strong>
-</div>
-</div>
-<div class="offer-card">
-
-    <div class="offer-top">
-
-        <div class="offer-left">
-            <div class="offer-label">
-                АКЦІЙНА ПРОПОЗИЦІЯ
-            </div>
-
-            <div class="old-price">
-                790 грн
-            </div>
-
-            <div class="new-price">
-                590 грн
-            </div>
-        </div>
-
-        <div class="offer-right">
-            <div class="countdown-title">
-                До кінця акції залишилось:
-            </div>
-
-            <div id="countdown" class="countdown-timer">
-                18:00:00
-            </div>
-        </div>
-
-    </div>
-
-    <div class="bonus-offer">
-        🎁 При замовленні 2-х вентиляторів —
-        <strong>безкоштовна доставка Новою Поштою</strong>
-    </div>
-
-    <a href="#order" class="btn hero-btn">
-        ОТРИМАТИ ЗІ ЗНИЖКОЮ
-    </a>
-
-</div>
-</section>
-
-<section>
-<div class="container">
-
-<h2>Вам теж знайомо?</h2>
-
-<div class="cards">
-
-<div class="card">
-У квартирі душно навіть з відкритими вікнами
-</div>
-
-<div class="card">
-В офісі важко працювати через спеку
-</div>
-
-<div class="card">
-Вночі неможливо заснути
-</div>
-
-<div class="card">
-Кондиціонер дорогий та сушить повітря
-</div>
-
-</div>
-
-<p class="solution">
-Наш вентилятор створює приємний прохолодний потік повітря та додатково зволожує його.
-</p>
-
-</div>
-</section>
-
-<section>
-<div class="container">
-
-<h2>Подивіться як він працює</h2>
-
-<div class="video-wrap">
-    <video controls>
-        <source src="video/demo.mp4" type="video/mp4">
-    </video>
-</div>
-
-<div class="center-btn">
-<a href="#order" class="btn">
-Замовити зі знижкою
-</a>
-</div>
-
-</section>
-    
-
-<section class="guarantees">
-    <div class="container">
-        <h2>Наші гарантії</h2>
-
-        <div class="guarantee-grid">
-            <div class="guarantee-item">🎁 Перевірка товару перед відправкою</div>
-            <div class="guarantee-item">🚚 Швидка доставка Новою Поштою по Україні</div>
-            <div class="guarantee-item">💳 Оплата при отриманні</div>
-            <div class="guarantee-item">🔄 Обмін та повернення</div>
-            <div class="guarantee-item">♻️ Гарантія 2 роки</div>
-        </div>
-
-        <div class="center-btn">
-<a href="#order" class="btn">
-Замовити зі знижкою
-</a>
-</div>
-</section>
-
-<section class="reviews">
-<div class="container">
-
-<h2>Відгуки покупців</h2>
-
-<div class="review-gallery">
-
-<img src="images/review-1.jpg" alt="Відгук покупця">
-<img src="images/review-2.jpg" alt="Відгук покупця">
-<img src="images/review-3.jpg" alt="Відгук покупця">
-<img src="images/review-4.jpg" alt="Відгук покупця">
-<img src="images/review-5.jpg" alt="Відгук покупця">
-
-</div>
-
-<div class="review-cards">
-<div class="review">
-⭐⭐⭐⭐⭐
-<p>
-Це дійсно крута річ необхідна для охолодження і зволоження повітря.
-Щиро вам дякую!
-</p>
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐
-<p>
-Їхав у відпустку потягом, ваш вентилятор просто спасіння.
-Дуже гарна річ, рекомендую.
-</p>
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐
-<p>
-Все чудесно, працює відмінно, дує неймовірно добре.
-Дякую вам!
-</p>
-</div>
-
-</div>
-
-</div>
-
-<div class="center-btn">
-<a href="#order" class="btn">
-Замовити зі знижкою
-</a>
-</div>
-    
-</section>    
-
-
-
-<section class="gallery">
-    <div class="container">
-        <h2>🔥 Саме так виглядає ваш порятунок від спеки</h2>
-
-        <div class="gallery-grid">
-            <img src="images/photo-1.webp" alt="Резервуар для води">
-            <img src="images/photo-2.webp" alt="Додавання льоду">
-            <img src="images/photo-3.webp" alt="Вентилятор на робочому столі">
-            <img src="images/photo-4.webp" alt="Портативний вентилятор">
-        </div>
-    </div>
-</section>
-
-
-<section class="advantages">
-<div class="container">
-
-<h2>Чому покупці обирають саме його?</h2>
-
-<ul>
-<li>📌 Компактний розмір</li>
-<li>📌 Практично безшумна робота</li>
-<li>📌 Резервуар для води 600 мл</li>
-<li>📌 Таймер автоматичного вимкнення</li>
-<li>📌 Можна додавати лід</li>
-<li>📌 Працює від Power Bank та мережі 220В</li>
-</ul>
-
-</div>
-
-<div class="center-btn">
-<a href="#order" class="btn">
-Замовити зі знижкою
-</a>
-    
-</div>
-</section>
-
-<section>
-<div class="container">
-
-<h2>Для кого підходить</h2>
-
-<div class="cards">
-<div class="card">🏠 Для дому</div>
-<div class="card">🏢 Для офісу</div>
-<div class="card">🚗 Для автомобіля</div>
-<div class="card">🏕 Для дачі та відпочинку</div>
-<div class="card">👶 Для дитячої кімнати</div>
-</div>
-
-</div>
-</section>
-
-<section>
-<div class="container">
-
-<h2>Огляд функцій та можливостей</h2>
-
-<div class="video-wrap">
-    <video controls>
-        <source src="video/demo2.mp4" type="video/mp4">
-    </video>
-</div>
-
-<div class="center-btn">
-<a href="#order" class="btn">
-Замовити зі знижкою
-</a>
-</div>
-
-</section>
-
-
-<section class="comparison">
-    <div class="container">
-
-        <h2>Чим наш вентилятор кращий?</h2>
-
-        <table>
-            <tr>
-                <th>Звичайний вентилятор</th>
-                <th>Наш вентилятор</th>
-            </tr>
-
-            <tr>
-                <td>Просто дує</td>
-                <td>✅ Охолоджує</td>
-            </tr>
-
-            <tr>
-                <td>Не зволожує</td>
-                <td>✅ Зволожує</td>
-            </tr>
-
-            <tr>
-                <td>Без підсвітки</td>
-                <td>✅ LED підсвітка</td>
-            </tr>
-
-            <tr>
-                <td>Лише від розетки</td>
-                <td>✅ Працює від Power Bank</td>
-            </tr>
-        </table>
-
-    </div>
-</section>
-
-
-
-<section class="offer">
-
-<div class="container">
-
-<h2>Спеціальна пропозиція</h2>
-
-<div class="price">
-<span class="old">790 грн</span>
-<span class="new">590 грн</span>
-</div>
-
-<br>
-
-<div class="bonus-offer">
-🎁 При замовленні 2-х вентиляторів —
-безкоштовна доставка Новою Поштою
-</div>
-
-<br>  
-
-<a href="#order" class="btn">
-Отримати зі знижкою
-</a>
-
-</div>
-
-</section>
-
-<section id="order">
-
-<div class="container">
-
-<h2>Залиште заявку зараз</h2>
-
-<p style="text-align:center;margin-bottom:30px;">
-Заповніть форму і ми зв'яжемося з вами найближчим часом
-</p>
-
-<form onsubmit="sendForm(event)">
-
-<input
-type="text"
-placeholder="Ваше ім'я"
-required
->
-
-<input
-type="tel"
-placeholder="Ваш номер телефону"
-required
->
-
-<button type="submit">
-Замовити за 590 грн
-</button>
-
-</form>
-
-</div>
-
-<div class="contact-help">
-    <h3>Маєте питання?</h3>
-
-    <div class="messengers">
-    </div>
-</div>
-<div class="messengers">
-    <a href="viber://chat?number=%2B380XXXXXXXXX" class="viber-btn">
-        🟣 Написати у Viber
-    </a>
-
-    <a href="https://t.me/username" class="telegram-btn">
-        🔵 Написати у Telegram
-    </a>
-</div>
-</section>
-
-<section class="faq">
-
-<div class="container">
-
-<h2>Часті питання</h2>
-
-<h3>Чи шумить вентилятор?</h3>
-
-<p>
-Ні. Пристрій працює дуже тихо та не заважає відпочинку чи роботі.
-</p>
-
-<h3>Чи можна використовувати без води?</h3>
-
-<p>
-Так. Він працює як звичайний вентилятор навіть без води.
-</p>
-
-<h3>Чи працює від павербанка?</h3>
-
-<p>
-Так. Просто підключіть його через USB.
-</p>
-
-<h3>Чи можна додавати лід?</h3>
-
-<p>
-Так. Для більш відчутної прохолоди можна додати кілька кубиків льоду.
-</p>
-
-<h3>Скільки триває доставка?</h3>
-
-<p>
-У середньому 1–3 дні по Україні.
-</p>
-
-</div>
-
-</section>
-</main>
-<footer>
-
-<p>
-Портативний вентилятор-зволожувач
-</p>
-
-<br>
-
-<p>
-Телефон: +38 (0XX) XXX-XX-XX
-</p>
-
-<p>
-Пн–Нд 09:00 – 20:00
-</p>
-
-<br>
-
-<p>
-© 2026 Усі права захищені
-</p>
-
-</footer>
-
-<script>
-
-function sendForm(event){
-
-event.preventDefault();
-
-alert(
-'Дякуємо! Ваша заявка успішно прийнята. Ми зв’яжемося з вами найближчим часом.'
-);
-
-}
-
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-
-    const hero = document.querySelector('.hero');
-    const stickyBtn = document.querySelector('.sticky-btn');
-
-    function toggleStickyBtn(){
-        if(window.innerWidth <= 768){
-            if(window.scrollY > hero.offsetHeight){
-                stickyBtn.classList.add('show');
-            }else{
-                stickyBtn.classList.remove('show');
-            }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портативний вентилятор 3в1</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Кастомні градієнти з локальними картинками */
+        .hero-bg {
+            background: linear-gradient(to right, rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.3)), url('images/hero-bg.jpg') center/cover no-repeat;
         }
-    }
+        .section-bg {
+            background: linear-gradient(to right, rgba(248, 250, 252, 0.95), rgba(248, 250, 252, 0.8)), url('images/hero-bg.jpg') center/cover;
+        }
+        /* Ховаємо скроллбар для галереї */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden relative">
 
-    window.addEventListener('scroll', toggleStickyBtn);
-    toggleStickyBtn();
+    <main>
+        <!-- HERO СЕКЦІЯ -->
+        <section class="hero-bg relative pt-8 pb-16 px-4 sm:px-6 lg:px-8 min-h-[650px] flex items-center">
+            <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
+                
+                <!-- Ліва колонка (Текст + Форма) -->
+                <div class="text-white space-y-5 lg:space-y-6">
+                    <div class="inline-flex items-center bg-white rounded-full px-4 py-2 shadow-md">
+                        <i data-lucide="snowflake" class="w-4 h-4 sm:w-5 sm:h-5 text-[#3b82f6] mr-2"></i>
+                        <span class="text-[#3b82f6] text-[10px] sm:text-xs font-bold tracking-wide uppercase">Охолодження + Зволоження + Підсвітка</span>
+                    </div>
 
-});
-</script>
-<script>
-const COUNTDOWN_HOURS = 18;
+                    <div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-[4rem] font-black leading-tight tracking-tight uppercase text-white drop-shadow-lg">
+                            Портативний <br/>
+                            вентилятор <span class="text-[#3b82f6]">3в1</span>
+                        </h1>
+                        <p class="mt-4 text-lg sm:text-2xl text-white font-medium drop-shadow-md">Ваш особистий <span class="text-[#3b82f6]">комфорт</span> у спеку!</p>
+                    </div>
 
-let endTime = localStorage.getItem('fanCountdownEnd');
+                    <div class="grid grid-cols-4 gap-2 sm:gap-4 py-2 max-w-[420px]">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-white/10 border border-white/20 w-12 h-12 sm:w-16 sm:h-16 rounded-[1rem] flex items-center justify-center mb-2 backdrop-blur-sm shadow-sm hover:bg-white/20 transition-colors">
+                                <i data-lucide="snowflake" class="w-6 h-6 sm:w-8 sm:h-8 text-white"></i>
+                            </div>
+                            <span class="text-[10px] sm:text-xs text-white font-medium leading-tight">Охолоджує<br>повітря</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-white/10 border border-white/20 w-12 h-12 sm:w-16 sm:h-16 rounded-[1rem] flex items-center justify-center mb-2 backdrop-blur-sm shadow-sm hover:bg-white/20 transition-colors">
+                                <i data-lucide="droplet" class="w-6 h-6 sm:w-8 sm:h-8 text-white"></i>
+                            </div>
+                            <span class="text-[10px] sm:text-xs text-white font-medium leading-tight">Зволожує<br>повітря</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-white/10 border border-white/20 w-12 h-12 sm:w-16 sm:h-16 rounded-[1rem] flex items-center justify-center mb-2 backdrop-blur-sm shadow-sm hover:bg-white/20 transition-colors">
+                                <i data-lucide="sun" class="w-6 h-6 sm:w-8 sm:h-8 text-white"></i>
+                            </div>
+                            <span class="text-[10px] sm:text-xs text-white font-medium leading-tight">7 кольорів<br>підсвітки</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-white/10 border border-white/20 w-12 h-12 sm:w-16 sm:h-16 rounded-[1rem] flex items-center justify-center mb-2 backdrop-blur-sm shadow-sm hover:bg-white/20 transition-colors">
+                                <i data-lucide="volume-2" class="w-6 h-6 sm:w-8 sm:h-8 text-white"></i>
+                            </div>
+                            <span class="text-[10px] sm:text-xs text-white font-medium leading-tight">Працює<br>тихо</span>
+                        </div>
+                    </div>
 
-if(!endTime){
-    endTime = new Date().getTime() + COUNTDOWN_HOURS * 60 * 60 * 1000;
-    localStorage.setItem('fanCountdownEnd', endTime);
-}
+                    <!-- Картка акції -->
+                    <div class="bg-[#FDFBF7] rounded-[2rem] p-6 sm:p-8 text-gray-900 max-w-xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] relative mt-6 lg:mt-8">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-gray-200 pb-5 mb-5 gap-6 sm:gap-4">
+                            <div class="flex-1">
+                                <div class="text-[#d92d20] font-bold text-sm tracking-wider mb-1 uppercase">Акційна пропозиція</div>
+                                <div class="text-gray-400 line-through text-xl font-bold mb-[-8px]">790 грн</div>
+                                <div class="text-6xl font-black text-[#1d4ed8] flex items-baseline">
+                                    590 <span class="text-3xl font-bold ml-2">грн</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Таймер -->
+                            <div class="text-left sm:text-right border-l-0 sm:border-l border-gray-200 pl-0 sm:pl-6">
+                                <div class="text-[#ea580c] text-sm font-bold mb-3">До кінця акції залишилось:</div>
+                                <div class="flex gap-2 text-center items-start justify-start sm:justify-end" id="countdown-display">
+                                    <div class="flex flex-col">
+                                        <div class="bg-[#fff7ed] border border-[#ffedd5] text-[#ea580c] text-3xl font-black rounded-xl w-[56px] h-[56px] flex items-center justify-center shadow-sm" id="hours">17</div>
+                                        <span class="text-[10px] text-gray-500 mt-2 font-semibold uppercase">годин</span>
+                                    </div>
+                                    <span class="text-[#ea580c] text-2xl font-black mt-2">:</span>
+                                    <div class="flex flex-col">
+                                        <div class="bg-[#fff7ed] border border-[#ffedd5] text-[#ea580c] text-3xl font-black rounded-xl w-[56px] h-[56px] flex items-center justify-center shadow-sm" id="minutes">59</div>
+                                        <span class="text-[10px] text-gray-500 mt-2 font-semibold uppercase">хвилин</span>
+                                    </div>
+                                    <span class="text-[#ea580c] text-2xl font-black mt-2">:</span>
+                                    <div class="flex flex-col">
+                                        <div class="bg-[#fff7ed] border border-[#ffedd5] text-[#ea580c] text-3xl font-black rounded-xl w-[56px] h-[56px] flex items-center justify-center shadow-sm" id="seconds">42</div>
+                                        <span class="text-[10px] text-gray-500 mt-2 font-semibold uppercase">секунд</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-function updateCountdown(){
+                        <div class="flex items-center gap-4 mb-6">
+                            <i data-lucide="gift" class="w-8 h-8 text-[#d92d20] flex-shrink-0"></i>
+                            <p class="text-[15px] text-gray-800 font-medium leading-snug">
+                                При замовленні 2-х вентиляторів — <br>
+                                <span class="text-[#2563eb] font-bold">безкоштовна доставка Новою Поштою</span>
+                            </p>
+                        </div>
 
-    const now = new Date().getTime();
-    const distance = endTime - now;
+                        <a href="#order" class="block text-center w-full bg-[#22c55e] hover:bg-[#16a34a] text-white text-[20px] font-black py-4 sm:py-5 rounded-2xl shadow-[0_5px_0_rgb(21,128,61)] hover:shadow-[0_2px_0_rgb(21,128,61)] hover:translate-y-[3px] transition-all duration-200 uppercase tracking-wider">
+                            Отримати зі знижкою
+                        </a>
+                    </div>
+                </div>
 
-    if(distance <= 0){
+                <!-- Права колонка (Зображення товару) -->
+                <div class="relative hidden lg:flex items-center justify-center h-full">
+                    <!-- Завантаження зображення товару з папки images -->
+                    <img src="images/hero-product.jpg" alt="Вентилятор 3в1" class="w-[120%] max-w-[650px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform translate-x-10" style="mix-blend-mode: screen;">
+                </div>
+                
+                <!-- Мобільне зображення -->
+                <div class="flex lg:hidden w-full mt-10 justify-center relative">
+                     <!-- Завантаження зображення товару з папки images -->
+                     <img src="images/hero-product.jpg" alt="Вентилятор 3в1" class="w-full max-w-[320px] sm:max-w-md h-auto drop-shadow-2xl" style="mix-blend-mode: screen;">
+                </div>
 
-        document.getElementById('countdown').innerHTML = '00:00:00';
+            </div>
+        </section>
 
-        localStorage.removeItem('fanCountdownEnd');
+        <!-- СЕКЦІЯ ПЕРЕВАГ ДОСТАВКИ -->
+        <section class="bg-white border-y border-gray-200 py-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 justify-center">
+                    <div class="flex items-center justify-center sm:justify-start gap-3">
+                        <i data-lucide="package" class="w-8 h-8 text-gray-700 flex-shrink-0"></i>
+                        <span class="text-xs sm:text-sm font-semibold text-gray-800 leading-tight">Перевірка товару<br>перед відправкою</span>
+                    </div>
+                    <div class="flex items-center justify-center sm:justify-start gap-3">
+                        <i data-lucide="truck" class="w-8 h-8 text-gray-700 flex-shrink-0"></i>
+                        <span class="text-xs sm:text-sm font-semibold text-gray-800 leading-tight">Швидка доставка<br>Новою Поштою по Україні</span>
+                    </div>
+                    <div class="flex items-center justify-center sm:justify-start gap-3">
+                        <i data-lucide="credit-card" class="w-8 h-8 text-gray-700 flex-shrink-0"></i>
+                        <span class="text-xs sm:text-sm font-semibold text-gray-800 leading-tight">Оплата<br>при отриманні</span>
+                    </div>
+                    <div class="flex items-center justify-center sm:justify-start gap-3">
+                        <i data-lucide="refresh-cw" class="w-8 h-8 text-gray-700 flex-shrink-0"></i>
+                        <span class="text-xs sm:text-sm font-semibold text-gray-800 leading-tight">Обмін<br>та повернення</span>
+                    </div>
+                    <div class="flex items-center justify-center sm:justify-start gap-3 col-span-2 md:col-span-1 lg:col-span-1">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-gray-700 flex-shrink-0"></i>
+                        <span class="text-xs sm:text-sm font-semibold text-gray-800 leading-tight">Гарантія<br>2 роки</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        return;
-    }
+        <!-- СЕКЦІЯ "ВАМ ТЕЖ ЗНАЙОМО?" -->
+        <section class="section-bg py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8 uppercase tracking-tight">
+                            Вам теж <span class="text-blue-600">знайомо?</span>
+                        </h2>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-3">
+                                <i data-lucide="flame" class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
+                                <span class="font-medium">У квартирі душно навіть з відкритими вікнами</span>
+                            </div>
+                            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-3">
+                                <i data-lucide="building" class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
+                                <span class="font-medium">В офісі важко працювати через спеку</span>
+                            </div>
+                            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-3">
+                                <i data-lucide="moon" class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
+                                <span class="font-medium">Вночі неможливо заснути</span>
+                            </div>
+                            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-3">
+                                <i data-lucide="fan" class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
+                                <span class="font-medium">Кондиціонер дорогий та сушить повітря</span>
+                            </div>
+                        </div>
 
-    const hours = Math.floor(distance / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-lg relative overflow-hidden">
+                            <div class="relative z-10">
+                                <h3 class="text-xl font-bold mb-2">Рішення є!</h3>
+                                <p class="text-blue-50 text-lg">Наш вентилятор створює приємний прохолодний потік повітря та додатково зволожує його.</p>
+                            </div>
+                            <i data-lucide="snowflake" class="absolute -right-4 -bottom-4 w-32 h-32 text-blue-500 opacity-30"></i>
+                        </div>
+                    </div>
 
-    document.getElementById('countdown').innerHTML =
-        String(hours).padStart(2,'0') + ':' +
-        String(minutes).padStart(2,'0') + ':' +
-        String(seconds).padStart(2,'0');
-}
+                    <div class="relative">
+                        <!-- Зображення "Вам теж знайомо" -->
+                        <img src="images/familiar.jpg" alt="Вентилятор в інтер'єрі" class="w-full h-auto rounded-3xl shadow-2xl border-4 border-white">
+                    </div>
 
-updateCountdown();
-setInterval(updateCountdown,1000);
-</script>    
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦІЯ ВІДЕО ТА ГАРАНТІЙ -->
+        <section class="bg-white py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    
+                    <!-- Блок відео 1 -->
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center uppercase tracking-tight">
+                            Подивіться як він <span class="text-blue-600">працює</span>
+                        </h2>
+                        
+                        <div class="relative aspect-video rounded-3xl overflow-hidden shadow-xl bg-black mb-8 border-4 border-white">
+                            <!-- Підключення відео з папки video -->
+                            <video controls class="w-full h-full object-cover">
+                                <source src="video/demo.mp4" type="video/mp4">
+                                Ваш браузер не підтримує відео.
+                            </video>
+                        </div>
+
+                        <div class="flex justify-center">
+                            <a href="#order" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">Замовити зі знижкою</a>
+                        </div>
+                    </div>
+
+                    <!-- Блок гарантій -->
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center uppercase tracking-tight">
+                            Наші <span class="text-blue-600">гарантії</span>
+                        </h2>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 rounded-2xl p-5 flex items-center shadow-sm border border-gray-100 transition-transform hover:-translate-y-1 duration-200">
+                                <div class="bg-blue-100 p-3 rounded-full mr-5"><i data-lucide="package" class="w-6 h-6 text-blue-600"></i></div>
+                                <span class="font-semibold text-gray-800 text-lg">Перевірка товару перед відправкою</span>
+                            </div>
+                            <div class="bg-gray-50 rounded-2xl p-5 flex items-center shadow-sm border border-gray-100 transition-transform hover:-translate-y-1 duration-200">
+                                <div class="bg-blue-100 p-3 rounded-full mr-5"><i data-lucide="truck" class="w-6 h-6 text-blue-600"></i></div>
+                                <span class="font-semibold text-gray-800 text-lg">Швидка доставка Новою Поштою по Україні</span>
+                            </div>
+                            <div class="bg-gray-50 rounded-2xl p-5 flex items-center shadow-sm border border-gray-100 transition-transform hover:-translate-y-1 duration-200">
+                                <div class="bg-blue-100 p-3 rounded-full mr-5"><i data-lucide="credit-card" class="w-6 h-6 text-blue-600"></i></div>
+                                <span class="font-semibold text-gray-800 text-lg">Оплата при отриманні</span>
+                            </div>
+                            <div class="bg-gray-50 rounded-2xl p-5 flex items-center shadow-sm border border-gray-100 transition-transform hover:-translate-y-1 duration-200">
+                                <div class="bg-blue-100 p-3 rounded-full mr-5"><i data-lucide="refresh-cw" class="w-6 h-6 text-blue-600"></i></div>
+                                <span class="font-semibold text-gray-800 text-lg">Обмін та повернення</span>
+                            </div>
+                            <div class="bg-gray-50 rounded-2xl p-5 flex items-center shadow-sm border border-gray-100 transition-transform hover:-translate-y-1 duration-200">
+                                <div class="bg-blue-100 p-3 rounded-full mr-5"><i data-lucide="shield-check" class="w-6 h-6 text-blue-600"></i></div>
+                                <span class="font-semibold text-gray-800 text-lg">Гарантія 2 роки</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦІЯ ВІДГУКІВ -->
+        <section class="bg-gray-100 py-16 sm:py-24 border-y border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-center text-gray-900 mb-12 uppercase tracking-tight">Відгуки покупців</h2>
+                
+                <!-- Галерея фото відгуків з папки images -->
+                <div class="flex overflow-x-auto gap-4 mb-12 pb-4 hide-scrollbar snap-x">
+                    <img src="images/review-1.jpg" alt="Відгук покупця 1" class="w-48 h-64 sm:w-60 sm:h-80 object-cover rounded-2xl shadow-md snap-center shrink-0 border-4 border-white">
+                    <img src="images/review-2.jpg" alt="Відгук покупця 2" class="w-48 h-64 sm:w-60 sm:h-80 object-cover rounded-2xl shadow-md snap-center shrink-0 border-4 border-white">
+                    <img src="images/review-3.jpg" alt="Відгук покупця 3" class="w-48 h-64 sm:w-60 sm:h-80 object-cover rounded-2xl shadow-md snap-center shrink-0 border-4 border-white">
+                    <img src="images/review-4.jpg" alt="Відгук покупця 4" class="w-48 h-64 sm:w-60 sm:h-80 object-cover rounded-2xl shadow-md snap-center shrink-0 border-4 border-white">
+                    <img src="images/review-5.jpg" alt="Відгук покупця 5" class="w-48 h-64 sm:w-60 sm:h-80 object-cover rounded-2xl shadow-md snap-center shrink-0 border-4 border-white">
+                </div>
+
+                <!-- Текстові відгуки -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="flex text-yellow-400 mb-3">
+                            <i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i>
+                        </div>
+                        <p class="text-gray-700 italic">"Це дійсно крута річ необхідна для охолодження і зволоження повітря. Щиро вам дякую!"</p>
+                        <div class="mt-4 font-semibold text-sm text-gray-900">- Олена М.</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="flex text-yellow-400 mb-3">
+                            <i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i>
+                        </div>
+                        <p class="text-gray-700 italic">"Їхав у відпустку потягом, ваш вентилятор просто спасіння. Дуже гарна річ, рекомендую."</p>
+                        <div class="mt-4 font-semibold text-sm text-gray-900">- Максим</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="flex text-yellow-400 mb-3">
+                            <i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i><i data-lucide="star" class="fill-current w-5 h-5"></i>
+                        </div>
+                        <p class="text-gray-700 italic">"Все чудесно, працює відмінно, дує неймовірно добре. Дякую вам!"</p>
+                        <div class="mt-4 font-semibold text-sm text-gray-900">- Ірина</div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center">
+                    <a href="#order" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">Замовити зі знижкою</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ГАЛЕРЕЯ -->
+        <section class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-center text-gray-900 mb-12">🔥 Саме так виглядає ваш порятунок від спеки</h2>
+                
+                <!-- Галерея фото з папки images -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="aspect-square relative rounded-2xl overflow-hidden shadow-md">
+                        <img src="images/photo-1.webp" alt="Резервуар для води" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square relative rounded-2xl overflow-hidden shadow-md">
+                        <img src="images/photo-2.webp" alt="Додавання льоду" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square relative rounded-2xl overflow-hidden shadow-md">
+                        <img src="images/photo-3.webp" alt="Вентилятор на робочому столі" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square relative rounded-2xl overflow-hidden shadow-md">
+                        <img src="images/photo-4.webp" alt="Портативний вентилятор" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПЕРЕВАГИ -->
+        <section class="bg-gray-50 py-16 sm:py-24 border-t border-gray-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-10 uppercase tracking-tight">Чому покупці обирають саме його?</h2>
+                
+                <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl text-left border border-gray-100">
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <li class="flex items-center text-lg text-gray-800 font-medium">
+                            <i data-lucide="check-circle-2" class="w-7 h-7 text-green-500 mr-4 flex-shrink-0"></i> Компактний розмір
+                        </li>
+                        <li class="flex items-center text-lg text-gray-800 font-medium">
+                            <i data-lucide="check-circle-2" class="w-7 h-7 text-green-500 mr-4 flex-shrink-0"></i> Практично безшумна робота
+                        </li>
+                        <li class="flex items-center text-lg text-gray-800 font-medium">
+                            <i data-lucide="check-circle-2" class="w-7 h-7 text-green-500 mr-4 flex-shrink-0"></i> Резервуар для води 600 мл
+                        </li>
+                        <li class="flex items-center text-lg text-gray-800 font-medium">
+                            <i data-lucide="check-circle-2" class="w-7 h-7 text-green-500 mr-4 flex-shrink-0"></i> Таймер автоматичного вимкнення
+                        </li>
+                        <li class="flex items-center text-lg text-gray-800 font-medium">
+                            <i data-lucide="check-circle-2" class="w-7 h-7 text-green-500 mr-4 flex-shrink-0"></i> Можна додавати лід
+                        </li>
+                        <li class="flex items-center text-lg text-gray-800 font-medium">
+                            <i data-lucide="check-circle-2" class="w-7 h-7 text-green-500 mr-4 flex-shrink-0"></i> Працює від Power Bank та мережі 220В
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="mt-12 flex justify-center">
+                    <a href="#order" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-2xl font-bold text-xl shadow-[0_4px_0_rgb(37,99,235)] hover:shadow-[0_2px_0_rgb(37,99,235)] hover:translate-y-[2px] transition-all uppercase">Замовити зі знижкою</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ДЛЯ КОГО ПІДХОДИТЬ -->
+        <section class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-12 uppercase">Для кого підходить</h2>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <div class="bg-blue-50 border border-blue-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+                        <i data-lucide="home" class="w-10 h-10 text-blue-500 mb-3"></i>
+                        <span class="font-bold text-gray-800">Для дому</span>
+                    </div>
+                    <div class="bg-blue-50 border border-blue-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+                        <i data-lucide="building-2" class="w-10 h-10 text-blue-500 mb-3"></i>
+                        <span class="font-bold text-gray-800">Для офісу</span>
+                    </div>
+                    <div class="bg-blue-50 border border-blue-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+                        <i data-lucide="car" class="w-10 h-10 text-blue-500 mb-3"></i>
+                        <span class="font-bold text-gray-800">Для автомобіля</span>
+                    </div>
+                    <div class="bg-blue-50 border border-blue-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+                        <i data-lucide="tent" class="w-10 h-10 text-blue-500 mb-3"></i>
+                        <span class="font-bold text-gray-800">Для дачі та відпочинку</span>
+                    </div>
+                    <div class="bg-blue-50 border border-blue-100 p-6 rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow col-span-2 lg:col-span-1">
+                        <i data-lucide="baby" class="w-10 h-10 text-blue-500 mb-3"></i>
+                        <span class="font-bold text-gray-800">Для дитячої кімнати</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ВІДЕО ОГЛЯД 2 -->
+        <section class="bg-gray-100 py-16 sm:py-24 border-t border-gray-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-10 uppercase">Огляд функцій та можливостей</h2>
+                
+                <div class="relative aspect-video rounded-3xl overflow-hidden shadow-2xl bg-black mb-10 border-4 border-white">
+                    <!-- Підключення відео 2 з папки video -->
+                    <video controls class="w-full h-full object-cover">
+                        <source src="video/demo2.mp4" type="video/mp4">
+                        Ваш браузер не підтримує відео.
+                    </video>
+                </div>
+
+                <a href="#order" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">Замовити зі знижкою</a>
+            </div>
+        </section>
+
+        <!-- ПОРІВНЯННЯ -->
+        <section class="py-16 sm:py-24 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-center text-gray-900 mb-12 uppercase tracking-tight">Чим наш вентилятор кращий?</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
+                    <!-- Звичайний -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-3xl p-8">
+                        <div class="flex items-center justify-center w-16 h-16 bg-gray-200 rounded-full mb-6 mx-auto">
+                            <i data-lucide="fan" class="w-8 h-8 text-gray-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-600 mb-8 uppercase">Звичайний вентилятор</h3>
+                        
+                        <ul class="space-y-5 text-gray-500">
+                            <li class="flex items-center"><i data-lucide="x" class="w-6 h-6 text-red-400 mr-4"></i> Просто дує</li>
+                            <li class="flex items-center"><i data-lucide="x" class="w-6 h-6 text-red-400 mr-4"></i> Не зволожує</li>
+                            <li class="flex items-center"><i data-lucide="x" class="w-6 h-6 text-red-400 mr-4"></i> Без підсвітки</li>
+                            <li class="flex items-center"><i data-lucide="x" class="w-6 h-6 text-red-400 mr-4"></i> Лише від розетки</li>
+                        </ul>
+                    </div>
+
+                    <!-- Наш -->
+                    <div class="bg-blue-600 rounded-3xl p-8 shadow-2xl relative transform md:-translate-y-4">
+                        <div class="absolute -top-4 -right-4 bg-yellow-400 text-yellow-900 font-bold px-4 py-1 rounded-full shadow-md transform rotate-12">Топ вибір!</div>
+                        <div class="flex items-center justify-center w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full mb-6 mx-auto">
+                            <i data-lucide="snowflake" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-white mb-8 uppercase">Наш вентилятор</h3>
+                        
+                        <ul class="space-y-5 text-blue-50 font-medium text-lg">
+                            <li class="flex items-center"><div class="bg-white rounded-full p-1 mr-4"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i></div> ✅ Охолоджує</li>
+                            <li class="flex items-center"><div class="bg-white rounded-full p-1 mr-4"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i></div> ✅ Зволожує</li>
+                            <li class="flex items-center"><div class="bg-white rounded-full p-1 mr-4"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i></div> ✅ LED підсвітка</li>
+                            <li class="flex items-center"><div class="bg-white rounded-full p-1 mr-4"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i></div> ✅ Працює від Power Bank</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОФЕР ТА ФОРМА ЗАМОВЛЕННЯ -->
+        <section id="order" class="bg-gray-900 py-16 sm:py-24 relative overflow-hidden">
+            <!-- Фоновий малюнок локальний -->
+            <div class="absolute inset-0 opacity-20">
+                <img src="images/hero-bg.jpg" alt="Фон" class="w-full h-full object-cover blur-sm">
+            </div>
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-4 uppercase tracking-tight">Спеціальна пропозиція</h2>
+                    <p class="text-gray-300 text-lg">Заповніть форму і ми зв'яжемося з вами найближчим часом</p>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-2xl max-w-lg mx-auto">
+                    
+                    <div class="flex items-baseline justify-center gap-4 mb-6 pb-6 border-b border-gray-200">
+                        <span class="text-gray-400 line-through text-2xl font-medium">790 грн</span>
+                        <span class="text-5xl font-extrabold text-blue-600">590 <span class="text-2xl">грн</span></span>
+                    </div>
+
+                    <div class="flex items-start gap-3 mb-8 bg-blue-50 p-4 rounded-xl border border-blue-100">
+                        <i data-lucide="gift" class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
+                        <p class="text-sm text-gray-700 font-medium">
+                            При замовленні 2-х вентиляторів — <br>
+                            <strong class="text-blue-700">безкоштовна доставка Новою Поштою</strong>
+                        </p>
+                    </div>
+
+                    <form onsubmit="sendForm(event)" class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Ваше ім'я" required class="w-full bg-gray-50 border border-gray-200 text-gray-900 text-lg rounded-xl focus:ring-blue-500 focus:border-blue-500 block p-4 outline-none transition-all">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Ваш номер телефону" required class="w-full bg-gray-50 border border-gray-200 text-gray-900 text-lg rounded-xl focus:ring-blue-500 focus:border-blue-500 block p-4 outline-none transition-all">
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-[#4CAF50] hover:bg-[#45a049] text-white text-xl font-bold py-5 rounded-xl shadow-[0_4px_0_rgb(56,142,60)] hover:shadow-[0_2px_0_rgb(56,142,60)] hover:translate-y-[2px] transition-all duration-200 uppercase tracking-wide mt-4">
+                            Замовити за 590 грн
+                        </button>
+                    </form>
+
+                    <div class="mt-8 text-center border-t border-gray-200 pt-8">
+                        <h3 class="text-gray-500 font-medium mb-4">Маєте питання? Напишіть нам:</h3>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="viber://chat?number=%2B380XXXXXXXXX" class="flex-1 flex items-center justify-center bg-[#7360f2] hover:bg-[#6050d0] text-white font-medium py-3 px-4 rounded-xl transition-colors">
+                                <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i> Viber
+                            </a>
+                            <a href="https://t.me/username" class="flex-1 flex items-center justify-center bg-[#2AABEE] hover:bg-[#2298D6] text-white font-medium py-3 px-4 rounded-xl transition-colors">
+                                <i data-lucide="send" class="w-5 h-5 mr-2"></i> Telegram
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-16 sm:py-24 bg-gray-50">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-12 uppercase">Часті питання</h2>
+                
+                <div class="space-y-4">
+                    <!-- Питання 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-blue-500 mr-3"></i> Чи шумить вентилятор?
+                        </h3>
+                        <p class="text-gray-600 pl-8">Ні. Пристрій працює дуже тихо та не заважає відпочинку чи роботі.</p>
+                    </div>
+                    <!-- Питання 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-blue-500 mr-3"></i> Чи можна використовувати без води?
+                        </h3>
+                        <p class="text-gray-600 pl-8">Так. Він працює як звичайний вентилятор навіть без води.</p>
+                    </div>
+                    <!-- Питання 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-blue-500 mr-3"></i> Чи працює від павербанка?
+                        </h3>
+                        <p class="text-gray-600 pl-8">Так. Просто підключіть його через USB кабель, який йде у комплекті.</p>
+                    </div>
+                    <!-- Питання 4 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-blue-500 mr-3"></i> Чи можна додавати лід?
+                        </h3>
+                        <p class="text-gray-600 pl-8">Так. Для більш відчутної прохолоди можна додати кілька кубиків льоду до резервуара.</p>
+                    </div>
+                    <!-- Питання 5 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2 flex items-center">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-blue-500 mr-3"></i> Скільки триває доставка?
+                        </h3>
+                        <p class="text-gray-600 pl-8">У середньому 1–3 дні Новою Поштою по всій території України.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ФУТЕР -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h4 class="text-white text-xl font-bold mb-4">Портативний вентилятор-зволожувач 3в1</h4>
+            <div class="space-y-2 mb-8">
+                <p>Телефон: +38 (0XX) XXX-XX-XX</p>
+                <p>Пн–Нд 09:00 – 20:00</p>
+            </div>
+            <p class="text-sm">© 2026 Усі права захищені</p>
+        </div>
+    </footer>
+
+    <!-- STICKY BUTTON (Для мобільних) -->
+    <div id="sticky-btn" class="fixed bottom-0 left-0 w-full p-4 bg-white border-t border-gray-200 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.1)] z-50 transform translate-y-full transition-transform duration-300 md:hidden">
+        <a href="#order" class="block w-full bg-[#4CAF50] hover:bg-[#45a049] text-white text-center text-xl font-bold py-4 rounded-xl uppercase shadow-lg">Замовити зі знижкою</a>
+    </div>
+
+    <!-- МОДАЛЬНЕ ВІКНО УСПІШНОЇ ЗАЯВКИ (замість alert) -->
+    <div id="success-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-gray-900/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white p-8 sm:p-10 rounded-3xl max-w-sm w-full mx-4 text-center shadow-2xl transform scale-95 transition-transform duration-300" id="success-modal-content">
+            <div class="w-20 h-20 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i data-lucide="check" class="w-10 h-10"></i>
+            </div>
+            <h3 class="text-2xl font-extrabold text-gray-900 mb-3">Дякуємо!</h3>
+            <p class="text-gray-600 mb-8 text-lg">Ваша заявка успішно прийнята. Ми зв’яжемося з вами найближчим часом для підтвердження деталей.</p>
+            <button onclick="closeModal()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg py-4 rounded-xl transition-colors">
+                Зрозуміло
+            </button>
+        </div>
+    </div>
+
+    <!-- Скрипти -->
+    <script>
+        // Ініціалізація іконок
+        lucide.createIcons();
+
+        // Скрипт для модального вікна (замість alert)
+        const modal = document.getElementById('success-modal');
+        const modalContent = document.getElementById('success-modal-content');
+
+        function sendForm(event) {
+            event.preventDefault(); // Зупиняємо відправку форми
+            // Показуємо модальне вікно
+            modal.classList.remove('hidden');
+            // Маленька затримка для анімації появи
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+            }, 10);
+            
+            // Очищаємо форму після відправки
+            event.target.reset();
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        // Скрипт Sticky Button
+        document.addEventListener('DOMContentLoaded', function() {
+            const hero = document.querySelector('.hero-bg');
+            const stickyBtn = document.getElementById('sticky-btn');
+
+            function toggleStickyBtn() {
+                if (window.innerWidth <= 768) {
+                    if (window.scrollY > hero.offsetHeight / 2) {
+                        stickyBtn.classList.remove('translate-y-full');
+                    } else {
+                        stickyBtn.classList.add('translate-y-full');
+                    }
+                }
+            }
+
+            window.addEventListener('scroll', toggleStickyBtn);
+            window.addEventListener('resize', toggleStickyBtn);
+            toggleStickyBtn(); // Виклик при завантаженні
+        });
+
+        // Оновлений скрипт Таймера (через localStorage)
+        const COUNTDOWN_HOURS = 18;
+        let endTime = localStorage.getItem('fanCountdownEnd');
+
+        // Якщо немає збереженого часу, встановлюємо новий (поточний час + 18 годин)
+        if (!endTime) {
+            endTime = new Date().getTime() + COUNTDOWN_HOURS * 60 * 60 * 1000;
+            localStorage.setItem('fanCountdownEnd', endTime);
+        }
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = endTime - now;
+
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+
+            if (distance <= 0) {
+                // Час вийшов
+                hoursEl.textContent = '00';
+                minutesEl.textContent = '00';
+                secondsEl.textContent = '00';
+                localStorage.removeItem('fanCountdownEnd');
+                return;
+            }
+
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const totalHours = Math.floor(distance / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            hoursEl.textContent = String(totalHours).padStart(2, '0');
+            minutesEl.textContent = String(minutes).padStart(2, '0');
+            secondsEl.textContent = String(seconds).padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
 </body>
-</html>    
+</html>
