@@ -77,43 +77,72 @@ object-fit:contain;
 }
 
 .hero h1{
-    font-size:72px;
-    line-height:1;
-    margin-bottom:20px;
-    color:#fff;
-    text-transform:uppercase;
+font-size:84px;
+font-weight:800;
+line-height:.95;
+text-transform:uppercase;
+margin-bottom:25px;
+color:#fff;
 }
-
 .hero h1 span{
     color:#4da3ff;
 }
 
 .hero-subtitle{
-    font-size:32px;
-    margin-bottom:35px;
+font-size:28px;
+font-weight:400;
+margin-bottom:35px;
 }
 
 .hero-subtitle span{
-    color:#4da3ff;
+color:#4da3ff;
+font-weight:700;
 }
 
 .top-badge{
-    display:inline-block;
-    padding:14px 25px;
-    border-radius:50px;
-    background:#fff;
-    color:#2672ff;
-    font-weight:700;
-    margin-bottom:30px;
+display:inline-flex;
+align-items:center;
+gap:12px;
+padding:16px 26px;
+border-radius:20px;
+background:#fff;
+color:#2672ff;
+font-size:20px;
+font-weight:700;
+box-shadow:0 8px 25px rgba(0,0,0,.15);
+margin-bottom:30px;
 }
 
 .hero-icons{
-    display:flex;
-    gap:20px;
-    margin-bottom:40px;
-    flex-wrap:wrap;
+display:flex;
+gap:18px;
+margin-bottom:40px;
 }
 
+.hero-icon{
+width:110px;
+height:110px;
+background:#fff;
+border-radius:18px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.hero-icon span{
+font-size:34px;
+margin-bottom:8px;
+}
+
+.hero-icon strong{
+font-size:14px;
+line-height:1.3;
+color:#222;
+text-align:center;
+font-weight:600;
+}
 .offer-card{
     background:#fff;
     color:#222;
@@ -156,24 +185,10 @@ object-fit:contain;
     font-size:48px;
     font-weight:700;
 }
-    .hero-icon{
-background:#fff;
-border-radius:18px;
-width:110px;
-height:110px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-box-shadow:0 8px 20px rgba(0,0,0,.15);
-}
-
-.hero-icon strong{
-font-size:14px;
-line-height:1.3;
-margin-top:8px;
-text-align:center;
-color:#222;
+  .hero-icon img{
+width:42px;
+height:42px;
+margin-bottom:10px;
 }
     
 
@@ -374,16 +389,23 @@ max-width:260px;
 <strong>Охолоджує повітря</strong>
 </div>
 <div class="hero-icon">
-💧
-<strong>Зволожує повітря</strong>
+    <img src="images/icon-cooling.svg" alt="">
+    <strong>Охолоджує<br>повітря</strong>
 </div>
+
 <div class="hero-icon">
-🌈
-<strong>7 кольорів підсвітки</strong>
+    <img src="images/icon-water.svg" alt="">
+    <strong>Зволожує<br>повітря</strong>
 </div>
+
 <div class="hero-icon">
-🔇
-<strong>Працює тихо</strong>
+    <img src="images/icon-light.svg" alt="">
+    <strong>7 кольорів<br>підсвітки</strong>
+</div>
+
+<div class="hero-icon">
+    <img src="images/icon-silent.svg" alt="">
+    <strong>Працює<br>тихо</strong>
 </div>
 </div>
 <div class="offer-card">
