@@ -134,7 +134,7 @@
                 <!-- Мобільне зображення -->
                 <div class="flex lg:hidden w-full mt-10 justify-center relative">
                      <!-- Завантаження зображення товару з папки images -->
-                     <img src="images/hero-product.jpg" alt="Вентилятор 3в1" class="w-full max-w-[320px] sm:max-w-md h-auto drop-shadow-2xl" style="mix-blend-mode: screen;">
+                     <img src="images/hero-product.png" alt="Вентилятор 3в1" class="w-full max-w-[320px] sm:max-w-md h-auto drop-shadow-2xl" style="mix-blend-mode: screen;">
                 </div>
 
             </div>
@@ -208,7 +208,7 @@
 
                     <div class="relative">
                         <!-- Зображення "Вам теж знайомо" -->
-                        <img src="images/familiar.webp" alt="Вентилятор в інтер'єрі" class="w-full h-auto rounded-3xl shadow-2xl border-4 border-white">
+                        <img src="images/familiar.jpg" alt="Вентилятор в інтер'єрі" class="w-full h-auto rounded-3xl shadow-2xl border-4 border-white">
                     </div>
 
                 </div>
@@ -278,13 +278,13 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-center text-gray-900 mb-12 uppercase tracking-tight">Відгуки покупців</h2>
                 
-                <!-- Галерея фото відгуків з папки images -->
+                <!-- Галерея фото відгуків з папки images (Змінено object-cover на object-contain для правильного відображення скриншотів) -->
                 <div class="flex overflow-x-auto gap-4 mb-12 pb-4 hide-scrollbar snap-x">
-                    <img src="images/review-1.jpg" alt="Відгук покупця 1" class="w-48 h-64 sm:w-60 sm:h-80 object-cover rounded-2xl shadow-md snap-center shrink-0 border-4 border-white">
-                    <img src="images/review-2.jpg" alt="Відгук покупця 2" class="w-48 h-64 sm:w-60 sm:h-80 object-cover rounded-2xl shadow-md snap-center shrink-0 border-4 border-white">
-                    <img src="images/review-3.jpg" alt="Відгук покупця 3" class="w-48 h-64 sm:w-60 sm:h-80 object-cover rounded-2xl shadow-md snap-center shrink-0 border-4 border-white">
-                    <img src="images/review-4.jpg" alt="Відгук покупця 4" class="w-48 h-64 sm:w-60 sm:h-80 object-cover rounded-2xl shadow-md snap-center shrink-0 border-4 border-white">
-                    <img src="images/review-5.jpg" alt="Відгук покупця 5" class="w-48 h-64 sm:w-60 sm:h-80 object-cover rounded-2xl shadow-md snap-center shrink-0 border-4 border-white">
+                    <img src="images/review-1.jpg" alt="Відгук покупця 1" class="w-60 sm:w-72 h-[350px] sm:h-[450px] object-contain bg-white rounded-2xl shadow-sm snap-center shrink-0 border border-gray-200 p-1">
+                    <img src="images/review-2.jpg" alt="Відгук покупця 2" class="w-60 sm:w-72 h-[350px] sm:h-[450px] object-contain bg-white rounded-2xl shadow-sm snap-center shrink-0 border border-gray-200 p-1">
+                    <img src="images/review-3.jpg" alt="Відгук покупця 3" class="w-60 sm:w-72 h-[350px] sm:h-[450px] object-contain bg-white rounded-2xl shadow-sm snap-center shrink-0 border border-gray-200 p-1">
+                    <img src="images/review-4.jpg" alt="Відгук покупця 4" class="w-60 sm:w-72 h-[350px] sm:h-[450px] object-contain bg-white rounded-2xl shadow-sm snap-center shrink-0 border border-gray-200 p-1">
+                    <img src="images/review-5.jpg" alt="Відгук покупця 5" class="w-60 sm:w-72 h-[350px] sm:h-[450px] object-contain bg-white rounded-2xl shadow-sm snap-center shrink-0 border border-gray-200 p-1">
                 </div>
 
                 <!-- Текстові відгуки -->
@@ -410,9 +410,10 @@
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl font-extrabold text-gray-900 mb-10 uppercase">Огляд функцій та можливостей</h2>
                 
-                <div class="relative aspect-video rounded-3xl overflow-hidden shadow-2xl bg-black mb-10 border-4 border-white">
+                <!-- Змінено висоту відео: тепер воно вище завдяки aspect-[4/3] замість aspect-video -->
+                <div class="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl bg-black mb-10 border-4 border-white w-full max-h-[550px] mx-auto">
                     <!-- Підключення відео 2 з папки video -->
-                    <video controls class="w-full h-full object-cover">
+                    <video controls class="w-full h-full object-contain bg-black">
                         <source src="video/demo2.mp4" type="video/mp4">
                         Ваш браузер не підтримує відео.
                     </video>
