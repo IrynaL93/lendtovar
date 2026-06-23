@@ -430,6 +430,25 @@ font-weight:600;
     font-weight:600;
     text-align:left;
 }
+
+.countdown-box{
+    margin:20px auto;
+    text-align:center;
+}
+
+.countdown-title{
+    font-size:18px;
+    font-weight:600;
+    color:#ff6b00;
+    margin-bottom:10px;
+}
+
+.countdown-timer{
+    font-size:42px;
+    font-weight:700;
+    color:#e53935;
+    letter-spacing:2px;
+}    
     
 @media(max-width:768px){
 
@@ -610,8 +629,14 @@ h2{
 <span class="new">590 грн</span>
 </div>
 
-<div class="stock-alert">
-🔥 За акційною ціною залишилось 17 шт.
+<div class="countdown-box">
+    <div class="countdown-title">
+        ⏳ До завершення акції залишилось:
+    </div>
+
+    <div id="countdown" class="countdown-timer">
+        18:00:00
+    </div>
 </div>
 
 <a href="#order" class="btn">
@@ -659,6 +684,26 @@ h2{
 
 </div>
 </section>
+
+<section>
+<div class="container">
+
+<h2>Подивіться як він працює</h2>
+
+<div class="video-wrap">
+    <video controls>
+        <source src="video/demo.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="center-btn">
+<a href="#order" class="btn">
+Замовити зі знижкою
+</a>
+</div>
+
+</section>
+    
 
 <section class="guarantees">
     <div class="container">
@@ -731,24 +776,6 @@ h2{
     
 </section>    
 
-<section>
-<div class="container">
-
-<h2>Подивіться як він працює</h2>
-
-<div class="video-wrap">
-    <video controls>
-        <source src="video/demo.mp4" type="video/mp4">
-    </video>
-</div>
-
-<div class="center-btn">
-<a href="#order" class="btn">
-Замовити зі знижкою
-</a>
-</div>
-
-</section>
 
 
 <section class="gallery">
@@ -805,19 +832,15 @@ h2{
 </div>
 </section>
 
-<section class="specs">
+<section>
 <div class="container">
 
-<h2>Характеристики</h2>
+<h2>Огляд функцій та можливостей</h2>
 
-<ul>
-<li>Живлення: USB</li>
-<li>3 режими роботи</li>
-<li>LED підсвітка</li>
-<li>Таймер</li>
-<li>Працює від Power Bank</li>
-</ul>
-
+<div class="video-wrap">
+    <video controls>
+        <source src="video/demo2.mp4" type="video/mp4">
+    </video>
 </div>
 
 <div class="center-btn">
@@ -825,8 +848,9 @@ h2{
 Замовити зі знижкою
 </a>
 </div>
-    
+
 </section>
+
 
 <section class="comparison">
     <div class="container">
