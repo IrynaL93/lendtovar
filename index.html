@@ -412,6 +412,27 @@ font-weight:600;
     border-radius:16px;
     box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
+
+    .guarantees{
+    padding:70px 0;
+    text-align:center;
+}
+
+.guarantee-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin:40px 0;
+}
+
+.guarantee-item{
+    background:#fff;
+    padding:25px 20px;
+    border-radius:16px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    font-size:18px;
+    font-weight:600;
+}
     
 @media(max-width:768px){
 
@@ -618,19 +639,19 @@ h2{
 <div class="cards">
 
 <div class="card">
-🥵 У квартирі душно навіть з відкритими вікнами
+У квартирі душно навіть з відкритими вікнами
 </div>
 
 <div class="card">
-🥵 В офісі важко працювати через спеку
+В офісі важко працювати через спеку
 </div>
 
 <div class="card">
-🥵 Вночі неможливо заснути
+Вночі неможливо заснути
 </div>
 
 <div class="card">
-🥵 Кондиціонер дорогий та сушить повітря
+Кондиціонер дорогий та сушить повітря
 </div>
 
 </div>
@@ -641,6 +662,74 @@ h2{
 
 </div>
 </section>
+
+<section class="guarantees">
+    <div class="container">
+        <h2>Наші гарантії</h2>
+
+        <div class="guarantee-grid">
+            <div class="guarantee-item">🎁 Перевірка товару перед відправкою</div>
+            <div class="guarantee-item">🚚 Швидка доставка Новою Поштою по Україні</div>
+            <div class="guarantee-item">💳 Оплата при отриманні</div>
+            <div class="guarantee-item">🔄 Обмін та повернення</div>
+            <div class="guarantee-item">♻️ Гарантія 2 роки</div>
+        </div>
+
+        <a href="#order" class="btn">Замовити зі знижкою</a>
+    </div>
+</section>
+
+<section class="reviews">
+<div class="container">
+
+<h2>Відгуки покупців</h2>
+
+<div class="review-gallery">
+
+<img src="images/review-1.jpg" alt="Відгук покупця">
+<img src="images/review-2.jpg" alt="Відгук покупця">
+<img src="images/review-3.jpg" alt="Відгук покупця">
+<img src="images/review-4.jpg" alt="Відгук покупця">
+<img src="images/review-5.jpg" alt="Відгук покупця">
+
+</div>
+
+<div class="review-cards">
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>
+Це дійсно крута річ необхідна для охолодження і зволоження повітря.
+Щиро вам дякую!
+</p>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>
+Їхав у відпустку потягом, ваш вентилятор просто спасіння.
+Дуже гарна річ, рекомендую.
+</p>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>
+Все чудесно, працює відмінно, дує неймовірно добре.
+Дякую вам!
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="center-btn">
+<a href="#order" class="btn">
+Замовити зі знижкою
+</a>
+</div>
+    
+</section>    
 
 <section>
 <div class="container">
@@ -684,10 +773,10 @@ h2{
 <ul>
 <li>📌 Компактний розмір</li>
 <li>📌 Практично безшумна робота</li>
-<li>📌 Резервуар для води</li>
+<li>📌 Резервуар для води 600 мл</li>
 <li>📌 Таймер автоматичного вимкнення</li>
 <li>📌 Можна додавати лід</li>
-<li>📌 Працює від Power Bank</li>
+<li>📌 Працює від Power Bank та мережі 220В</li>
 </ul>
 
 </div>
@@ -774,57 +863,7 @@ h2{
     </div>
 </section>
 
-<section class="reviews">
-<div class="container">
 
-<h2>Відгуки покупців</h2>
-
-<div class="review-gallery">
-
-<img src="images/review-1.jpg" alt="Відгук покупця">
-<img src="images/review-2.jpg" alt="Відгук покупця">
-<img src="images/review-3.jpg" alt="Відгук покупця">
-<img src="images/review-4.jpg" alt="Відгук покупця">
-<img src="images/review-5.jpg" alt="Відгук покупця">
-
-</div>
-
-<div class="review-cards">
-<div class="review">
-⭐⭐⭐⭐⭐
-<p>
-Це дійсно крута річ необхідна для охолодження і зволоження повітря.
-Щиро вам дякую!
-</p>
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐
-<p>
-Їхав у відпустку потягом, ваш вентилятор просто спасіння.
-Дуже гарна річ, рекомендую.
-</p>
-</div>
-
-<div class="review">
-⭐⭐⭐⭐⭐
-<p>
-Все чудесно, працює відмінно, дує неймовірно добре.
-Дякую вам!
-</p>
-</div>
-
-</div>
-
-</div>
-
-<div class="center-btn">
-<a href="#order" class="btn">
-Замовити зі знижкою
-</a>
-</div>
-    
-</section>
 
 <section class="offer">
 
@@ -836,12 +875,6 @@ h2{
 <span class="old">790 грн</span>
 <span class="new">590 грн</span>
 </div>
-
-<p>🎁 Перевірка товару перед відправкою</p>
-<p>🚚 Швидка доставка Новою Поштою по Україні</p>
-<p>💳 Оплата при отриманні</p>
-<p>🔄 Обмін та повернення</p>
-<p>♻️ Гарантія 2 роки</p>   
 
 <br>
 
