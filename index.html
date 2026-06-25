@@ -178,86 +178,73 @@
         </section>
 
        <!-- СЕКЦІЯ "ВАМ ТЕЖ ЗНАЙОМО?" -->
-<section class="section-bg py-14 sm:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
-
-            <!-- Ліва колонка -->
-            <div>
-
-                <h2 class="text-3xl sm:text-4xl font-black uppercase leading-tight text-gray-900 mb-7">
-                    Вам теж <span class="text-blue-600">знайомо?</span>
-                </h2>
-
-                <div class="grid sm:grid-cols-2 gap-3 mb-5">
-
-                    <div class="flex items-center gap-3 bg-white/85 backdrop-blur-md rounded-2xl px-5 py-4 shadow-md border border-white">
-                        <i data-lucide="flame" class="w-5 h-5 text-red-500 flex-shrink-0"></i>
-                        <span class="font-medium leading-snug">
-                            У квартирі душно навіть з відкритими вікнами
-                        </span>
-                    </div>
-
-                    <div class="flex items-center gap-3 bg-white/85 backdrop-blur-md rounded-2xl px-5 py-4 shadow-md border border-white">
-                        <i data-lucide="building" class="w-5 h-5 text-red-500 flex-shrink-0"></i>
-                        <span class="font-medium leading-snug">
-                            В офісі важко працювати через спеку
-                        </span>
-                    </div>
-
-                    <div class="flex items-center gap-3 bg-white/85 backdrop-blur-md rounded-2xl px-5 py-4 shadow-md border border-white">
-                        <i data-lucide="moon" class="w-5 h-5 text-red-500 flex-shrink-0"></i>
-                        <span class="font-medium leading-snug">
-                            Вночі неможливо заснути
-                        </span>
-                    </div>
-
-                    <div class="flex items-center gap-3 bg-white/85 backdrop-blur-md rounded-2xl px-5 py-4 shadow-md border border-white">
-                        <i data-lucide="fan" class="w-5 h-5 text-red-500 flex-shrink-0"></i>
-                        <span class="font-medium leading-snug">
-                            Кондиціонер дорогий та сушить повітря
-                        </span>
-                    </div>
-
-                </div>
-
-                <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-blue-600 to-blue-500 text-white px-7 py-6 shadow-xl">
-
-                    <div class="relative z-10">
-                        <h3 class="text-2xl font-bold mb-2">
-                            Рішення є!
-                        </h3>
-
-                        <p class="text-blue-100 text-lg leading-relaxed">
-                            Наш вентилятор створює приємний прохолодний потік повітря та додатково зволожує його.
-                        </p>
-                    </div>
-
-                    <i data-lucide="snowflake"
-                       class="absolute -right-5 -bottom-5 w-28 h-28 text-white/10">
-                    </i>
-
-                </div>
-
+        <section class="relative bg-[#faf9f6] py-16 sm:py-24 overflow-hidden">
+            <!-- Фон-зображення для десктопу (права частина) -->
+            <div class="absolute inset-y-0 right-0 w-full lg:w-[55%] hidden lg:block">
+                <!-- Підставте тут ім'я потрібної картинки з вентилятором в інтер'єрі -->
+                <img src="images/familiar.jpg" alt="Вентилятор в інтер'єрі" class="w-full h-full object-cover object-left">
+                <!-- Градієнт для плавного переходу від фону до картинки -->
+                <div class="absolute inset-0 bg-gradient-to-r from-[#faf9f6] via-[#faf9f6]/90 to-transparent w-64 left-0"></div>
             </div>
 
-            <!-- Фото -->
-            <div class="relative">
-
-                <div class="overflow-hidden rounded-[28px] shadow-2xl border-4 border-white">
-
-                    <img
-                        src="images/familiar.jpg"
-                        alt="Вентилятор в інтер'єрі"
-                        class="w-full h-[520px] object-cover hover:scale-105 transition duration-700">
-
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="lg:w-[55%] lg:pr-8">
+                    <h2 class="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-gray-900 mb-8 sm:mb-12 uppercase tracking-tight">
+                        Вам теж <span class="text-[#3b82f6]">знайомо?</span>
+                    </h2>
+                    
+                    <ul class="space-y-5 sm:space-y-6">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7 text-[#3b82f6] flex-shrink-0 mt-0.5 sm:mt-0" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <p class="ml-4 text-base sm:text-[17px] text-gray-800 font-medium leading-snug pt-0.5 sm:pt-1">Спека та задуха заважають працювати і відпочивати</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7 text-[#3b82f6] flex-shrink-0 mt-0.5 sm:mt-0" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <p class="ml-4 text-base sm:text-[17px] text-gray-800 font-medium leading-snug pt-0.5 sm:pt-1">Сухе повітря викликає дискомфорт і втому</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7 text-[#3b82f6] flex-shrink-0 mt-0.5 sm:mt-0" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <p class="ml-4 text-base sm:text-[17px] text-gray-800 font-medium leading-snug pt-0.5 sm:pt-1">Звичайні вентилятори тільки ганяють гаряче повітря</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7 text-[#3b82f6] flex-shrink-0 mt-0.5 sm:mt-0" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <p class="ml-4 text-base sm:text-[17px] text-gray-800 font-medium leading-snug pt-0.5 sm:pt-1">Гучна робота заважає зосередитись і спати</p>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 sm:w-7 sm:h-7 text-[#3b82f6] flex-shrink-0 mt-0.5 sm:mt-0" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <p class="ml-4 text-base sm:text-[17px] text-gray-800 font-medium leading-snug pt-0.5 sm:pt-1">Немає свіжості та прохолоди в потрібний момент</p>
+                        </li>
+                    </ul>
                 </div>
-
+                
+                <!-- Зображення для мобільної версії -->
+                <div class="mt-10 lg:hidden rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="images/familiar.jpg" alt="Вентилятор в інтер'єрі" class="w-full h-auto object-cover">
+                </div>
             </div>
+        </section>
 
-        </div>
-    </div>
-</section>
+        <!-- ВІДЕО СЕКЦІЯ -->
+        <section class="bg-white">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+                <div class="h-[320px] w-full overflow-hidden">
+                    <video controls class="w-full h-full object-cover"><source src="video/demo.mp4" type="video/mp4"></video>
+                </div>
+                <div class="h-[320px] w-full overflow-hidden">
+                    <video controls class="w-full h-full object-cover"><source src="video/demo2.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </section>
 
         <!-- СЕКЦІЯ ВІДЕО ТА ГАРАНТІЙ -->
         <section class="bg-white py-16 sm:py-24">
