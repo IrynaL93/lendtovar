@@ -177,52 +177,87 @@
             </div>
         </section>
 
-        <!-- СЕКЦІЯ "ВАМ ТЕЖ ЗНАЙОМО?" -->
-        <section class="section-bg py-16 sm:py-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    
-                    <div>
-                        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8 uppercase tracking-tight">
-                            Вам теж <span class="text-blue-600">знайомо?</span>
-                        </h2>
-                        
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-3">
-                                <i data-lucide="flame" class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
-                                <span class="font-medium">У квартирі душно навіть з відкритими вікнами</span>
-                            </div>
-                            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-3">
-                                <i data-lucide="building" class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
-                                <span class="font-medium">В офісі важко працювати через спеку</span>
-                            </div>
-                            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-3">
-                                <i data-lucide="moon" class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
-                                <span class="font-medium">Вночі неможливо заснути</span>
-                            </div>
-                            <div class="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-3">
-                                <i data-lucide="fan" class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5"></i>
-                                <span class="font-medium">Кондиціонер дорогий та сушить повітря</span>
-                            </div>
-                        </div>
+       <!-- СЕКЦІЯ "ВАМ ТЕЖ ЗНАЙОМО?" -->
+<section class="section-bg py-14 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
 
-                        <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-lg relative overflow-hidden">
-                            <div class="relative z-10">
-                                <h3 class="text-xl font-bold mb-2">Рішення є!</h3>
-                                <p class="text-blue-50 text-lg">Наш вентилятор створює приємний прохолодний потік повітря та додатково зволожує його.</p>
-                            </div>
-                            <i data-lucide="snowflake" class="absolute -right-4 -bottom-4 w-32 h-32 text-blue-500 opacity-30"></i>
-                        </div>
+            <!-- Ліва колонка -->
+            <div>
+
+                <h2 class="text-3xl sm:text-4xl font-black uppercase leading-tight text-gray-900 mb-7">
+                    Вам теж <span class="text-blue-600">знайомо?</span>
+                </h2>
+
+                <div class="grid sm:grid-cols-2 gap-3 mb-5">
+
+                    <div class="flex items-center gap-3 bg-white/85 backdrop-blur-md rounded-2xl px-5 py-4 shadow-md border border-white">
+                        <i data-lucide="flame" class="w-5 h-5 text-red-500 flex-shrink-0"></i>
+                        <span class="font-medium leading-snug">
+                            У квартирі душно навіть з відкритими вікнами
+                        </span>
                     </div>
 
-                    <div class="relative">
-                        <!-- Зображення "Вам теж знайомо" -->
-                        <img src="images/familiar.jpg" alt="Вентилятор в інтер'єрі" class="w-full h-auto rounded-3xl shadow-2xl border-4 border-white">
+                    <div class="flex items-center gap-3 bg-white/85 backdrop-blur-md rounded-2xl px-5 py-4 shadow-md border border-white">
+                        <i data-lucide="building" class="w-5 h-5 text-red-500 flex-shrink-0"></i>
+                        <span class="font-medium leading-snug">
+                            В офісі важко працювати через спеку
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-3 bg-white/85 backdrop-blur-md rounded-2xl px-5 py-4 shadow-md border border-white">
+                        <i data-lucide="moon" class="w-5 h-5 text-red-500 flex-shrink-0"></i>
+                        <span class="font-medium leading-snug">
+                            Вночі неможливо заснути
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-3 bg-white/85 backdrop-blur-md rounded-2xl px-5 py-4 shadow-md border border-white">
+                        <i data-lucide="fan" class="w-5 h-5 text-red-500 flex-shrink-0"></i>
+                        <span class="font-medium leading-snug">
+                            Кондиціонер дорогий та сушить повітря
+                        </span>
                     </div>
 
                 </div>
+
+                <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-blue-600 to-blue-500 text-white px-7 py-6 shadow-xl">
+
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-2">
+                            Рішення є!
+                        </h3>
+
+                        <p class="text-blue-100 text-lg leading-relaxed">
+                            Наш вентилятор створює приємний прохолодний потік повітря та додатково зволожує його.
+                        </p>
+                    </div>
+
+                    <i data-lucide="snowflake"
+                       class="absolute -right-5 -bottom-5 w-28 h-28 text-white/10">
+                    </i>
+
+                </div>
+
             </div>
-        </section>
+
+            <!-- Фото -->
+            <div class="relative">
+
+                <div class="overflow-hidden rounded-[28px] shadow-2xl border-4 border-white">
+
+                    <img
+                        src="images/familiar.jpg"
+                        alt="Вентилятор в інтер'єрі"
+                        class="w-full h-[520px] object-cover hover:scale-105 transition duration-700">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
 
         <!-- СЕКЦІЯ ВІДЕО ТА ГАРАНТІЙ -->
         <section class="bg-white py-16 sm:py-24">
