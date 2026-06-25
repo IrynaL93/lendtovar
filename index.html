@@ -27,31 +27,16 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
-        .video-box{
-    height:550px;
-}
-
-        .full-screen{
-    min-height:100vh;
-    padding:60px 0;
-}
-
-@media (max-width:1024px){
-    .full-screen{
-        min-height:auto;
-    }
-}
-
-@media (max-width:768px){
     .video-box{
-        height:420px;
-    }
+    width:100%;
+    height:clamp(320px, 60vh, 550px);
 }
 
-@media (max-width:480px){
-    .video-box{
-        height:320px;
-    }
+.video-box video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
 }
     </style>
 </head>
