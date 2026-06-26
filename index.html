@@ -762,5 +762,18 @@
         updateCountdown();
         setInterval(updateCountdown, 1000);
     </script>
+    fetch("config.json")
+    .then(res => res.json())
+    .then(data => {
+
+        document.querySelectorAll(".price").forEach(el => {
+            el.textContent = data.product.price;
+        });
+
+        document.querySelectorAll(".old-price").forEach(el => {
+            el.textContent = data.product.oldPrice + " грн";
+        });
+
+    });
 </body>
 </html>
