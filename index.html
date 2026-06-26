@@ -762,6 +762,7 @@
         updateCountdown();
         setInterval(updateCountdown, 1000);
     </script>
+    <script>
     fetch("config.json")
     .then(res => res.json())
     .then(data => {
@@ -775,5 +776,6 @@
         });
 
     });
+         </script>
 </body>
 </html>
