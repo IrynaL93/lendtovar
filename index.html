@@ -775,6 +775,7 @@
     .then(res => res.json())
     .then(data => {
 
+        // Ціни
         document.querySelectorAll(".price").forEach(el => {
             el.textContent = data.product.price;
         });
@@ -782,10 +783,18 @@
         document.querySelectorAll(".old-price").forEach(el => {
             el.textContent = data.product.oldPrice + " грн";
         });
-         document.getElementById("viber-link").href = data.contacts.viber;
-document.getElementById("telegram-link").href = data.contacts.telegram;
 
-    });
+        // Посилання
+        document.getElementById("viber-link").href = data.contacts.viber;
+        document.getElementById("telegram-link").href = data.contacts.telegram;
+
+        // Телефон (якщо є елементи з класом phone)
+        document.querySelectorAll(".phone").forEach(el => {
+            el.textContent = data.contacts.phone;
+        });
+
+    })
+    .catch(err => console.error("Помилка завантаження config.json:", err));
        
          </script>
 </body>
