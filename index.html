@@ -574,21 +574,29 @@
                         </div>
                         
                         <button type="submit" class="w-full bg-[#4CAF50] hover:bg-[#45a049] text-white text-xl font-bold py-5 rounded-xl shadow-[0_4px_0_rgb(56,142,60)] hover:shadow-[0_2px_0_rgb(56,142,60)] hover:translate-y-[2px] transition-all duration-200 uppercase tracking-wide mt-4">
-                            Замовити за 590 грн
-                        </button>
+    Замовити за <span class="price"></span> грн
+</button>
                     </form>
 
-                    <div class="mt-8 text-center border-t border-gray-200 pt-8">
-                        <h3 class="text-gray-500 font-medium mb-4">Маєте питання? Напишіть нам:</h3>
-                        <div class="flex flex-col sm:flex-row gap-3">
-                            <a href="viber://chat?number=%2B380955313888" class="flex-1 flex items-center justify-center bg-[#7360f2] hover:bg-[#6050d0] text-white font-medium py-3 px-4 rounded-xl transition-colors">
-                                <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i> Viber
-                            </a>
-                            <a href="https://t.me/+380955313888" class="flex-1 flex items-center justify-center bg-[#2AABEE] hover:bg-[#2298D6] text-white font-medium py-3 px-4 rounded-xl transition-colors">
-                                <i data-lucide="send" class="w-5 h-5 mr-2"></i> Telegram
-                            </a>
-                        </div>
-                    </div>
+                   <div class="mt-8 text-center border-t border-gray-200 pt-8">
+    <h3 class="text-gray-500 font-medium mb-4">Маєте питання? Напишіть нам:</h3>
+
+    <div class="flex flex-col sm:flex-row gap-3">
+        <a id="viber-link"
+           href="#"
+           class="flex-1 flex items-center justify-center bg-[#7360f2] hover:bg-[#6050d0] text-white font-medium py-3 px-4 rounded-xl transition-colors">
+            <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
+            Viber
+        </a>
+
+        <a id="telegram-link"
+           href="#"
+           class="flex-1 flex items-center justify-center bg-[#2AABEE] hover:bg-[#2298D6] text-white font-medium py-3 px-4 rounded-xl transition-colors">
+            <i data-lucide="send" class="w-5 h-5 mr-2"></i>
+            Telegram
+        </a>
+    </div>
+</div>
 
                 </div>
             </div>
